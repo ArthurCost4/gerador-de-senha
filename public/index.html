@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="form">
+        <h1>Gerador de senha</h1>
+        <div class="outputPassword" id="output"></div>
+
+        <label for="numberCharacter" >Digite uma quantidade de caracteres</label>
+        <input type="number" class="numberCharacter" name="numberCharacter" id="">
+        <fieldset class="especificaçoes" id="campoCheck">
+            <legend>Escolha as especificaçoes:</legend>
+
+            <div>
+                <input type="checkbox" value="upperCase" id="charUpperCase" name="recursos" checked>
+                <label for="charUpperCase">Letras maiusculas</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="lowerCase" id='charLowerCase' name="recursos">
+                <label for="charLowerCase">Letras minusculas</label>
+            </div>
+
+            <div>
+                <input type="checkbox" value="numbers" id="numbers" name="recursos">
+                <label for="numbers">Numeros</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="charEspecial" value="charEspecial" name="recursos">
+                <label for="charEspecial">caracteres especiais</label>
+            </div>
+        </fieldset>
+        <input type="submit" id="enviado" value="GERAR">
+    </form>
+    
+    <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
